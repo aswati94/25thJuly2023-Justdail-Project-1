@@ -11,9 +11,104 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <div class="container s_cont s_tbdr bg-white ps-1 pe-1">
+      <!-- Modal -->
+        <div class="modal hide" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+              <div class="float-start">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="row mt-0  m-0">
+                <div class="col">
+                  <a href="#" class="d-block mt-3 text-dark fs-5 fw-medium text-decoration-none ps-2">Sign in </a>
+                </div>
+                <div class="col text-end ">
+                  <a href="#" class="pe-3">
+                    <img alt="" class="img-fluid " style="width: 50px;" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/prot/profiledefault.png">
+                  </a>
+                </div>
+              </div>
+              <div class="mt-4">
+                <button type="button" class="btn btn-outline border border-dark-subtle rounded-pill btn-sm me-3 ms-3">Saved</button>
+                <button type="button" class="btn btn-outline border border-dark-subtle rounded-pill btn-sm me-3 ">Favorites</button>
+                <button type="button" class="btn btn-outline border border-dark-subtle rounded-pill btn-sm me-3 ">interests</button>
+              </div>
+              <div class=" mt-3">
+                <ul class="nav flex-column ">
+                <li class="nav-item clearfix">
+                  <a class="nav-link font14 " aria-current="page" href="#">
+                    <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/Languageicn.svg" class="me-2">
+                    English <span class="float-end font10 mt-1">change lanaguage</span>
+                  </a>
+                </li>
+                <li class="nav-item  ">
+                  <a class="nav-link font14 mt-2" href="#">
+                    <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/helpicn.svg" class="me-2">
+                    Customer Service</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link font14  mt-2" href="#">
+                    <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/listbusinessicn.svg" class="me-2"> List your Business <img alt="" 
+              style="width: 50px;" src="https://akam.cdn.jdmagicbox.com/images/icons/gif/freeanimation2x">
+                  </a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link font14  mt-2 ">
+                    <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/advertiseicn.svg" class="me-2"> Advertise</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link font14  mt-2 ">
+                    <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/mytransactions-icn.svg" class="me-2"> My Transaction</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link font14  mt-2 ">
+                    <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/mytransactions-icn.svg" class="me-2"> Wishlist</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link font14  mt-2 ">
+                    <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/managequotesicn.svg" class="me-2"> Manage Quotos</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link font14  mt-2 ">
+                    <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/we-are-hiring.svg" class="me-2"> We are hiring</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link font14  mt-2 ">
+                    <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/settings.svg" class="me-2">
+                    Settings</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link font14  mt-2 ">
+                    <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/privacyicn.svg" class="me-2"> Privacy Policy</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link font14  mt-2 ">
+                    <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/investors_relation.svg" class="me-2"> Inverstor Realation</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link font14  mt-2 ">
+                    <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/newproductsicn.svg" class="me-2"> Whats's New</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link font14  mt-2 ">
+                    <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/othersicn.svg" class="me-2">
+                    Others</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link font14  mt-2 ">
+                    <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/logouticn1.svg" class="me-2"> Login</a>
+                </li>
+                </ul>
+              </div> 
+            </div>
+          </div>
+        </div>
+        </div>
           <!-- Header Styling -->
-          <header class="sticky-top border-bottom border-light-subtle bg-white"> 
+        <header class="sticky-top border-bottom border-light-subtle bg-white"> 
             <div class="row h-100">
               <div class="col-4 col-sm-2 s_form_col s_tbdr">
                 <a href="#" class="d-block w-75">
@@ -33,7 +128,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link pt-1 pb-1 ps-1" href="#">
+                    <a class="nav-link pt-1 pb-1 ps-1" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                       <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/burgericnew.svg" alt="">
                     </a>
                   </li>
@@ -42,7 +137,7 @@
               </div>
               <!-- Small Window Search Tab Styling -->
               <div class="col-12 col-sm-7 pt-2 pb-2 ps-4 pe-4">
-                <form class="d-md-block d-md-none d-sm-none border pt-0 pb-0 border-dark rounded-3 p-1">
+                <form class="d-md-none d-sm-none border pt-0 pb-0 border-dark rounded-3 p-1">
                   <div class="row">
                     <div class="col-1 p-0">
                       <button class="btn mt-0" type="submit">
@@ -116,16 +211,14 @@
                 </div>
               </div>
             </div>    
-          </header>     
+        </header>     
           <!-- Main Section Styling               -->
           <main class="s_tbdr bg-white">
-            <div class="row m-0 mt-2 ggp ">
-              <div class="col-3  p-0 pt-0 text-center  d-flex justify-content-center">
+            <div class="s_m1 d-block d-sm-none">
+              <div class="row m-0 mt-2">
+              <div class="col-3  p-0 pt-0 text-center d-flex justify-content-center">
                 <a href="#" class="border-0 text-secondary-emphasis btn btn-sm d-block w-100 h-100 p-0 ">
-    
                   <img alt="" class=" img-fluid mx-auto d-block mt-2 " style="width: 50px;" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newhotkey/b2b_2x_wog-15dec.gif">
-    
-    
                   <span class=" fw600 text-center ">B2B</span>
                 </a>
               </div>
@@ -141,13 +234,14 @@
                   <span class=" w-100 fw600 text-center  ">Travel</span>
                 </a>
               </div>
-              <div class="col-3  p-0 text-center  "><a href="" class=" text-secondary-emphasis text-decoration-none border-0 w-100 btn btn-sm p-0 ">
+              <div class="col-3  p-0 text-center  ">
+                <a href="" class=" text-secondary-emphasis text-decoration-none border-0 w-100 btn btn-sm p-0 ">
                   <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/beauty.svg" class=" img-fluid mx-auto d-block mt-3">
                   <span class="fw600 text-center">Beauty</span>
                 </a>
               </div>
-    
-              <div class="col-3  p-0 text-center  text-wrap"><a href="" class=" text-secondary-emphasis text-decoration-none border-0 w-100 btn btn-sm p-0">
+              <div class="col-3  p-0 text-center text-wrap">
+                <a href="" class=" text-secondary-emphasis text-decoration-none border-0 w-100 btn btn-sm p-0">
                   <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/residence.svg" class=" img-fluid mx-auto d-block mt-3">
                   <span class="  p-0 fw600 text-center wrapper-block "> Interior Designers </span>
                 </a>
@@ -164,14 +258,14 @@
                   <span class=" lh-1 fw600 text-center"> Rent&amp; hire </span>
                 </a>
               </div>
-    
               <div class="col-3  p-0 text-center ">
                 <a href="" class=" text-secondary-emphasis text-decoration-none border-0 w-100 btn btn-sm p-0">
                   <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/weddingrequisites.svg" class=" img-fluid mx-auto d-block mt-3">
                   <span class="fw600 text-center"> Wedding</span>
                 </a>
               </div>
-              <div class="col-3  p-0 text-center  "><a href="" class=" text-secondary-emphasis text-decoration-none border-0 w-100 btn btn-sm p-0">
+              <div class="col-3  p-0 text-center  ">
+                <a href="" class=" text-secondary-emphasis text-decoration-none border-0 w-100 btn btn-sm p-0">
                   <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/petshops.svg" class=" img-fluid mx-auto d-block mt-3">
                   <span class=" fw600 text-center">Home Services</span>
                 </a>
@@ -188,8 +282,6 @@
                   <span class="fw600 text-center lh-1"> Repairs&amp;Services</span>
                 </a>
               </div>
-    
-    
               <div class="col-3  p-0 text-center ">
                 <a href="" class=" text-secondary-emphasis text-decoration-none border-0 w-100 h-100 pt-2 btn btn-sm p-0">
                   <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/realestate/pghostelhotkey2xnew.gif" style="width: 50px;" class=" img-fluid mx-auto d-block">
@@ -214,22 +306,66 @@
                   <span class=" fw600 text-center">Education</span>
                 </a>
               </div>
-    
               <div class="col-3  p-0 text-center ">
                 <a href="" class=" text-secondary-emphasis text-decoration-none border-0 w-100 btn btn-sm p-0">
                   <img alt="" src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/showmore.svg" class=" img-fluid mx-auto d-block mt-3">
                   <span class="text-center fw600 text-center">Show More</span>
                 </a>
               </div>
+              </div>
             </div>
+            <div class="s_m2 row m-0 mt-4">
+              <div class="col">
+                <a href="">
+                  <img alt="" class="img-fluid rounded-4" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/free_listing_banner%20_14march.png" />
+                </a>
+              </div>
+            </div>
+            <div class="s_m3 row m-0 mt-3 p-1 ">
+              <div class="col ps-2 pe-2 position-relative">
+                <a href="# " class="text-white a_m1_font ">
+                  <img alt="" class="img-fluid  rounded-3 " src="https://akam.cdn.jdmagicbox.com/images/icons/android/newhome/1/food.jpg?v=1">
+                  <span class="position-absolute bottom-0 start-0  a_m1_font  mb-2 ms-3">ORDER FOOD</span>
+                </a>
+              </div>
+              <div class="col ps-2 pe-2 position-relative">
+                <a href="#" class="text-white ">
+                  <img alt="" class="img-fluid rounded-3 " src="https://akam.cdn.jdmagicbox.com/images/icons/iphone/new/JioSim.jpg">
+                  <span class="position-absolute bottom-0  start-0 a_m1_font  mb-2 ms-3">JIO SIM</span>
+                </a>
+              </div>
+              <div class="col ps-2 pe-2 position-relative">
+                <a href="#" class="text-white">
+                  <img alt="" class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icontent/flight/flight_hmpg_banner_27feb.png">
+                  <span class="position-absolute bottom-0  start-0 a_m1_font  mb-2 ms-3">BOOK FLIGHT </span>
+                </a>
+              </div>
+              <div class="col ps-2 pe-2 position-relative"><a href="#" class="text-white">
+                  <img alt="" class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icons/android/newhome/1/paybills.jpg?v=1">
+                  <span class="position-absolute bottom-0  start-0 a_m1_font  mb-2 ms-3">PAY BILLS</span>
+                </a>
+              </div>
+            </div>
+            <div class="s_m4 row m-0 mt-3">
+              <div class="col">
+                <a href="#"><img alt="" class="img-fluid  rounded-3" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/realestate/explore2x.gif">
+                </a>
+              </div>
+              <div class="col">
+                <a href="#"><img alt="" class="img-fluid  rounded-3" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/realestate/postright2xnew.gif">
+                </a>
+              </div>
+            </div>
+            
+
           </main>
           <!-- Footer Section Styling -->
-          <footer class="s_tbdr bg-warning">
+          <!-- <footer class="s_tbdr bg-warning"> -->
                 <div class="s_footer1 border-top border-bottom s_tbdr">F1</div>
                 <div class="s_footer2 s_tbdr">F2</div>
                 <div class="s_footer3 border-top s_tbdr">F3</div>
                 <div class="s_footer4 border-top s_tbdr">F4</div>
-          </footer>
+          <!-- </footer> -->
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
         <script src="./js/script.js"></script>
