@@ -1,22 +1,17 @@
 body{
     background-color: #e8e8e8;
 }
-
 .s_tbdr{
     border: 1px dashed red  ;
 }
-
 /* Header Styling */
 header{
     min-height: 81px;
-    width: 100%;
-    margin: auto;
+    z-index: 1000;
 }
-
 .s_l2{
     min-height: 275px;
 }
-
 /* MENU Item Styling */
 ul> li > a:hover{
     background-color: #EDEDED;
@@ -30,47 +25,72 @@ ul> li > a:hover{
 .s_menu >li:hover ul{
     display: block; /*show*/
 }
-
 .nav-link{
     font-size: small;
 }
-
 /* Main Styling height:4016*/
 main{
     height: 2000px;
 }
+
+.carousel-indicators button{
+    width: 6px! important;
+    height: 6px! important;
+}
+.s_mainslider img{
+    height: 275px;
+    width: 100%;
+}
+.s_mainslider:hover{
+    cursor: pointer;
+}
+.s_mainslider .s_ccp,.s_mainslider .s_ccn{
+    background-color: rgba(0,0,0,0.8);
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    visibility: visible !important;
+}
+.s_ccp{
+    left: 30px!important;
+}
+.s_ccn{
+    right: 30px!important;
+}
+.s_mainslider:hover .s_ccp,.s_mainslider:hover .s_ccn{
+    visibility: visible !important;
+}
+/* combination Selector */
+.s_ccp,.s_ccn{  
+    visibility: hidden !important;
+}
 ul.s_largemain_icons > li > a:hover{
     background-color: white;
 }
-
-/* ul.s_largemain_icons > li > a:hover > img{ */
-    /* box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.05); */
-/* } */
+ul.s_largemain_icons > li > a >img{
+    width: 75px;
+    height: 75px;
+}
+ul.s_largemain_icons > li > a:hover > img{
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.05);
+}
 /* Footer Styling height-1737*/ 
 .s_footer1{
     height: 112px;
 }
-
 .s_footer2{
     height: 1233px;
 }
-
 .s_footer3{
     height: 294px;
 }
-
 .s_footer4{
     height: 98px;
 }
-
 .s_tnr{
     font-family: 'Times New Roman', Times, serif;
 }
-
-
-
 /* MEDIA QUERY CSS */
-
 @media screen and (max-width: 576px){
     .s_form_col{
         height: 50px;
@@ -81,16 +101,11 @@ ul.s_largemain_icons > li > a:hover{
         bottom: 0px;
         left: 0px;
         width: 100%;
-
     }
-    /* .s_mt-5{ */
-        /* margin-top: 50px!important; */
-        /* padding-top: 30px; */
-    /* } */
 }
-
 @media (min-width: 1200px){
 .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1143px;
+    max-width: 1150px;
 }
 }
+/* FRAMES CSS  */
