@@ -32,11 +32,6 @@ ul> li > a:hover{
 main{
     height: 2000px;
 }
-.s_carousel_leftslider{
-    
-}
-
-
 .carousel-indicators button{
     width: 6px! important;
     height: 6px! important;
@@ -45,7 +40,15 @@ main{
     height: 275px;
     width: 100%;
 }
-.s_mainslider:hover{
+.s_xyz > img{
+    transform-origin: right bottom;
+    transform: scale3d(1,1,1);
+    transition: all linear 0.2s;
+}
+.s_xyz:hover >img{
+    transform: scale3d(1.1,1.1,1);
+}
+.s_mainslider:hover,.s_xyz:hover{
     cursor: pointer;
 }
 .s_mainslider .s_ccp,.s_mainslider .s_ccn{
