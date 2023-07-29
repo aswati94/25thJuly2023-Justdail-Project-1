@@ -97,6 +97,31 @@ ul.s_largemain_icons > li > a:hover > img{
 .s_tnr{
     font-family: 'Times New Roman', Times, serif;
 }
+.s_search_form{
+    position: fixed!important;
+    top:0px;
+    left:100px;
+    z-index:10000;
+    background-color: #fff;
+    transition: all linear 5s !important;
+}
+
+.s_animation{
+    animation-name: myAnimation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+.s_scrollToTop{
+    animation-name: stp;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
 /* FRAMES CSS  */
 @keyframes myAnimation{
      0%{
@@ -111,6 +136,16 @@ ul.s_largemain_icons > li > a:hover > img{
      100%{
         transform: translateY(-40px);
      }
+}
+@keyframes stp {
+    from{
+        opacity: 0;
+        transform: scale(0,0);
+    }
+    to{
+        opacity: 0;
+        transform: scale(1,1);
+    }
 }
 /* MEDIA QUERY CSS */
 @media screen and (max-width: 576px){

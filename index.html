@@ -14,6 +14,9 @@
     </head>
     <body>
       <!-- Modal -->
+        <button data-btn="a_tbn" id="mybtn" class=" btn btn-sm s_scrollToTop bg-light rounded-circle position-fixed bottom-0 end-0 rounded-5 border border-light-subtle  p-0 "style="bottom: 50px !important; right: 14px !important;">
+          <img alt="" class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icontent/jdmart/gojd_backtop_icon.svg">
+        </button>
         <div class="modal hide" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
           <div class="modal-content">
@@ -140,14 +143,14 @@
         </div>
         <div class="container s-cont bg-white ps-1pe-1">
           <!-- Header Styling -->
-        <header class="position-sticky top-0 border-bottom bg-white s_tbdr"> 
+        <header class="position-sticky top-0 border-bottom bg-white s_tbdr ms-2 me-2"> 
             <div class="row m-0 h-100">
               <div class="col-4 col-sm-2 s_form_col s_tbdr">
                 <a href="#" class="d-block w-75">
                   <img class="img-fluid d-block mt-3 ms-2" src="https://akam.cdn.jdmagicbox.com/images/icontent/jdrwd/jdlogosvg.svg" alt="">
                 </a>
               </div>
-              <div class="col-8 col-sm-3 s_form_col s_tbdr">
+              <div class="col-8 col-sm-3 s_form_col s_tbdr d-block d-sm-none">
                 <!-- Small window header Styling -->
                 <div class="d-block d-sm-none">
                   <ul class="nav float-end mt-2 s_tnr">
@@ -168,8 +171,9 @@
                 </div>
               </div>
               <!-- Small Window Search Tab Styling -->
-              <div class="col-12 col-sm-7 pt-2 pb-2 ps-4 pe-4">
-                <form class="d-md-none d-sm-none border pt-0 pb-0 border-dark rounded-3 p-1">
+              <div class="col-12 col-sm-10 clearfix pt-2 pb-2 ps-4 pe-4 d-flex justify-content-end">
+                <div class="">
+                  <form class="d-md-none d-sm-none border pt-0 pb-0 border-dark rounded-3 p-1">
                   <div class="row m-0">
                     <div class="col-1 p-0">
                       <button class="btn mt-0" type="submit">
@@ -185,9 +189,9 @@
                       </button>
                     </div>
                   </div> 
-                </form>
-                <!-- Large Window Header Styling -->
-                <div class="d-none d-sm-block">
+                  </form>
+                  <!-- Large Window Header Styling -->
+                  <div class="d-none d-sm-block s_tbdr float-end">
                   <ul class="nav mt-4 s_menu">
                   <li class="nav-item">
                     <a class="ps-1 pt-1 pb-1 pe-1 nav-link active" aria-current="page" href="#">
@@ -240,9 +244,10 @@
                     </a>
                   </li>
                   </ul>
+                  </div>
                 </div>
-              </div>
-            </div>    
+              </div>  
+            </div>  
         </header>     
           <!-- Main Section Styling  small & Large Both Screen -->
           <main class="s_tbdr bg-white ms-4 me-4 s_tbdr bg-danger">
@@ -587,7 +592,7 @@
                 <!-- Row1 Part1 col-8 -->
                 <div class="col-8 p-0 h-100">
                   <!-- Row1  Main section large window Normal Heading -->
-                  <div class="row m-0 a_schfont" style="overflow: hidden ; height: 45px;">
+                  <div class="row m-0 rounded-2 a_schfont" style="overflow: hidden ; height: 45px;">
                     <div class="col-auto ms-3 p-0 d-flex justify-content-end">
                       <h3 class="pe-1 mt-0 me-0">Search across</h3>
                     </div>
@@ -600,7 +605,7 @@
                    <!-- Location & Search Partition Styling-->
                   <div class="row m-0 clearfix" style="z-index: 10000; ">
                     <!-- Location Partition -->
-                    <div class="col-4">
+                    <div class="col-4 s_tbdr">
                       <div class="row m-0 rounded-2 shadow-sm border border-dark" style="background: #EEEEEE ;">
                         <!-- Location Symbol sub-partition styling -->
                         <div class="col-1 d-flex align-items-center">
@@ -608,7 +613,7 @@
                         </div>
                         <!-- Location Area sub-partition Styling -->
                         <div class="col">
-                          <input type="text" class="form-control shadow-none border-0 pt-3 pb-3 fw-medium " placeholder="Bengaluru" aria-label="First name" style="height: 49px; background:#EEEEEE;">
+                          <input type="text" class="form-control font-control-sm shadow-none border-0 pt-3 pb-3 fw-medium" placeholder="Bengaluru" aria-label="First name" style="height: 49px; background:#EEE;">
                         </div>
                       </div>
                     </div>
@@ -653,7 +658,7 @@
                   </div>
                 </div>
                 <!-- Row1 Part2 Col-4 -->
-                <div class="col-4 p-0  ">
+                <div class="col-4 p-0 clearfix">
                   <button class=" btn btn-sm text-dark border border-dark rounded-start-2 position-relative float-end me-5 mt-4 bg-white top-0">
                     <span class="text-dark fw-semibold">Download App</span>
                     <img alt="" class=" img-fluid border border-dark rounded-1 position-absolute bg-white" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/getapp_jd.gif" style="bottom: -14px !important; right: -28px !important; z-index: 1000 !important; width: 30px;">
@@ -1046,102 +1051,102 @@
               </div>
             </div>
 
-            <div class="s_15 row mt-5 m-0   border border-light-subtle rounded-4  ">
-              <div class="col-4 mb-5 p-0 ">
-                <h3 class="ms-3 mt-5">Bills And Recharge</h3>
-                <p class="ms-3 mt-3">Pay your bills &amp; recharge instantly with Justdial</p>
-                <a href="#" class="  ms-3 mt-3 d-block mb-4 text-decoration-none">Explore More</a>
+            <!-- <div class="s_15 row mt-5 m-0   border border-light-subtle rounded-4  "> -->
+              <!-- <div class="col-4 mb-5 p-0 "> -->
+                <!-- <h3 class="ms-3 mt-5">Bills And Recharge</h3> -->
+                <!-- <p class="ms-3 mt-3">Pay your bills &amp; recharge instantly with Justdial</p> -->
+                <!-- <a href="#" class="  ms-3 mt-3 d-block mb-4 text-decoration-none">Explore More</a> -->
     
-              </div>
+              <!-- </div> -->
     
-              <div class="col-8 p-0">
-                <div class="row m-0">
+              <!-- <div class="col-8 p-0"> -->
+                <!-- <div class="row m-0"> -->
     
-                  <div class="col  p-0  flexbox">
-                    <a href="#" class=" box_size icon icon d-block ms-5 mt-5 border border-light-subtle rounded-4 text-decoration-none text-dark text-center">
-                      <img alt="" class="img-fluid img rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_mobile.svg?w=64&amp;q=75">
-                      <h6 class="mt-2">Mobile</h6>
-                    </a>
-                    <a href="#" class="box_size icon d-block ms-5 mt-5 border border-light-subtle rounded-4 text-decoration-none text-dark text-center">
-                      <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_electricity.svg?w=64&amp;q=75">
-                      <h6 class="mt-2">Electricity</h6>
-                    </a>
-                    <a href="#" class=" box_size icon d-block ms-5 mt-5 border border-light-subtle rounded-4 text-decoration-none text-dark text-center">
-                      <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_dth.svg?w=64&amp;q=75">
-                      <h6 class="mt-2">DTH</h6>
-                    </a>
-                    <a href="#" class=" box_size icon d-block ms-5 mt-5 border border-light-subtle rounded-4 text-decoration-none text-dark text-center">
-                      <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_water.svg?w=64&amp;q=75">
-                      <h6 class="mt-2">Water</h6>
-                    </a>
-                    <a href="#" class=" box_size icon d-block ms-5 mt-5 border border-light-subtle rounded-4 text-decoration-none text-dark text-center">
-                      <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_gas.svg?w=64&amp;q=75">
-                      <h6 class="mt-2">GAS</h6>
-                    </a>
-    
-    
-                    <a href="#" class=" box_size icon d-block ms-5 mt-5 border border-light-subtle rounded-4 text-decoration-none text-dark text-center">
-                      <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_insurance.svg?w=64&amp;q=75">
-                      <h6 class="mt-2">Insurance</h6>
-                    </a>
-                  </div>
-    
-                </div>
-    
-              </div>
+                  <!-- <div class="col  p-0  flexbox"> -->
+                    <!-- <a href="#" class=" box_size icon icon d-block ms-5 mt-5 border border-light-subtle rounded-4 text-decoration-none text-dark text-center"> -->
+                      <!-- <img alt="" class="img-fluid img rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_mobile.svg?w=64&amp;q=75"> -->
+                      <!-- <h6 class="mt-2">Mobile</h6> -->
+                    <!-- </a> -->
+                    <!-- <a href="#" class="box_size icon d-block ms-5 mt-5 border border-light-subtle rounded-4 text-decoration-none text-dark text-center"> -->
+                      <!-- <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_electricity.svg?w=64&amp;q=75"> -->
+                      <!-- <h6 class="mt-2">Electricity</h6> -->
+                    <!-- </a> -->
+                    <!-- <a href="#" class=" box_size icon d-block ms-5 mt-5 border border-light-subtle rounded-4 text-decoration-none text-dark text-center"> -->
+                      <!-- <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_dth.svg?w=64&amp;q=75"> -->
+                      <!-- <h6 class="mt-2">DTH</h6> -->
+                    <!-- </a> -->
+                    <!-- <a href="#" class=" box_size icon d-block ms-5 mt-5 border border-light-subtle rounded-4 text-decoration-none text-dark text-center"> -->
+                      <!-- <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_water.svg?w=64&amp;q=75"> -->
+                      <!-- <h6 class="mt-2">Water</h6> -->
+                    <!-- </a> -->
+                    <!-- <a href="#" class=" box_size icon d-block ms-5 mt-5 border border-light-subtle rounded-4 text-decoration-none text-dark text-center"> -->
+                      <!-- <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_gas.svg?w=64&amp;q=75"> -->
+                      <!-- <h6 class="mt-2">GAS</h6> -->
+                    <!-- </a> -->
     
     
+                    <!-- <a href="#" class=" box_size icon d-block ms-5 mt-5 border border-light-subtle rounded-4 text-decoration-none text-dark text-center"> -->
+                      <!-- <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_insurance.svg?w=64&amp;q=75"> -->
+                      <!-- <h6 class="mt-2">Insurance</h6> -->
+                    <!-- </a> -->
+                  <!-- </div> -->
+    
+                <!-- </div> -->
+    
+              <!-- </div> -->
     
     
-              <div class="row a_m_ls_4  m-0 mt-5 border-top  ">
-                <div class="col-4 mb-5 p-0 ">
-                  <h3 class="ms-3 mt-5">Travel Bookings</h3>
-                  <p class="ms-3 mt-3">Instant ticket bookings for your best travel experience</p>
-                  <a href="#" class="ms-3 mt-3 d-block mb-5 text-decoration-none">Explore More</a>
-    
-                </div>
-                <div class="col-8 p-0">
-                  <div class="row m-0 mb-5 ">
     
     
-                    <div class="col p-0 flexbox">
-                      <a href="#" class="d-block  ms-5 mt-5 border border-light-subtle rounded-4 box_size icon text-decoration-none text-dark text-center">
-                        <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_flight.svg?w=64&amp;q=75">
-                        <h6 class="mt-2 ">Flight</h6>
-                        <span class="span_font  ">Powered By Easemytrip.com</span>
-                      </a>
-                      <a href="#" class=" d-block  ms-5 mt-5 border border-light-subtle rounded-4 box_size icon text-decoration-none text-dark text-center">
-                        <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_bus.svg?w=64&amp;q=75">
-                        <h6 class="mt-2">Bus</h6>
-                        <span class="span_font  ">Affordable Rides</span>
-                      </a>
-                      <a href="#" class="d-block  ms-5 mt-5 border border-light-subtle rounded-4 box_size icon text-decoration-none text-dark text-center">
-                        <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_train.svg?w=64&amp;q=75">
-                        <h6 class="mt-2">Train</h6>
-                        <span class="span_font  ">Hassle-free Booking</span>
-                      </a>
+              <!-- <div class="row a_m_ls_4  m-0 mt-5 border-top  "> -->
+                <!-- <div class="col-4 mb-5 p-0 "> -->
+                  <!-- <h3 class="ms-3 mt-5">Travel Bookings</h3> -->
+                  <!-- <p class="ms-3 mt-3">Instant ticket bookings for your best travel experience</p> -->
+                  <!-- <a href="#" class="ms-3 mt-3 d-block mb-5 text-decoration-none">Explore More</a> -->
     
-                      <a href="#" class="d-block  ms-5 mt-5 border border-light-subtle rounded-4 box_size icon text-decoration-none text-dark text-center">
-                        <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_hotels.svg?w=64&amp;q=75">
-                        <h6 class="mt-2">Hotel</h6>
-                        <span class="span_font  ">Budget-friendly Stay</span>
-                      </a>
-    
-                      <a href="#" class="d-block   ms-5 mt-5 border border-light-subtle  rounded-4 box_size icon text-decoration-none text-dark text-center">
-                        <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_carhire.svg?w=64&amp;q=75 ">
-                        <h6 class="mt-2">Car Rentals</h6>
-                        <span class="span_font  ">Drive Easy Anywhere</span>
-                      </a>
-    
-                    </div>
-    
-                  </div>
-                </div>
+                <!-- </div> -->
+                <!-- <div class="col-8 p-0"> -->
+                  <!-- <div class="row m-0 mb-5 "> -->
     
     
-              </div>
+                    <!-- <div class="col p-0 flexbox"> -->
+                      <!-- <a href="#" class="d-block  ms-5 mt-5 border border-light-subtle rounded-4 box_size icon text-decoration-none text-dark text-center"> -->
+                        <!-- <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_flight.svg?w=64&amp;q=75"> -->
+                        <!-- <h6 class="mt-2 ">Flight</h6> -->
+                        <!-- <span class="span_font  ">Powered By Easemytrip.com</span> -->
+                      <!-- </a> -->
+                      <!-- <a href="#" class=" d-block  ms-5 mt-5 border border-light-subtle rounded-4 box_size icon text-decoration-none text-dark text-center"> -->
+                        <!-- <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_bus.svg?w=64&amp;q=75"> -->
+                        <!-- <h6 class="mt-2">Bus</h6> -->
+                        <!-- <span class="span_font  ">Affordable Rides</span> -->
+                      <!-- </a> -->
+                      <!-- <a href="#" class="d-block  ms-5 mt-5 border border-light-subtle rounded-4 box_size icon text-decoration-none text-dark text-center"> -->
+                        <!-- <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_train.svg?w=64&amp;q=75"> -->
+                        <!-- <h6 class="mt-2">Train</h6> -->
+                        <!-- <span class="span_font  ">Hassle-free Booking</span> -->
+                      <!-- </a> -->
     
-            </div>
+                      <!-- <a href="#" class="d-block  ms-5 mt-5 border border-light-subtle rounded-4 box_size icon text-decoration-none text-dark text-center"> -->
+                        <!-- <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_hotels.svg?w=64&amp;q=75"> -->
+                        <!-- <h6 class="mt-2">Hotel</h6> -->
+                        <!-- <span class="span_font  ">Budget-friendly Stay</span> -->
+                      <!-- </a> -->
+    
+                      <!-- <a href="#" class="d-block   ms-5 mt-5 border border-light-subtle  rounded-4 box_size icon text-decoration-none text-dark text-center"> -->
+                        <!-- <img alt="" class="img-fluid rounded-5" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_carhire.svg?w=64&amp;q=75 "> -->
+                        <!-- <h6 class="mt-2">Car Rentals</h6> -->
+                        <!-- <span class="span_font  ">Drive Easy Anywhere</span> -->
+                      <!-- </a> -->
+    
+                    <!-- </div> -->
+    
+                  <!-- </div> -->
+                <!-- </div> -->
+    
+    
+              <!-- </div> -->
+    
+            <!-- </div> -->
 
 
 
